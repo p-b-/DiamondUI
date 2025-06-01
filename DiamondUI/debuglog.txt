@@ -1,0 +1,10 @@
+Main
+Initialised steam
+Initialising window
+Setting clear colour
+Creating new game
+Running game loop
+Game loop exited
+Deinitialising window
+Deinitialising steam
+Closing log file

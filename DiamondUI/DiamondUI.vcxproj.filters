@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{19ef9903-288e-4039-8164-959903e1251b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Entities">
+      <UniqueIdentifier>{2fa8171e-37a8-4dd9-bd92-8d6318163165}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{ce7b61c8-9130-4e77-a8eb-f50ff4b21411}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Maths">
+      <UniqueIdentifier>{6ad5bf3c-60a7-4753-b74f-20d71f2cbdf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Input">
+      <UniqueIdentifier>{f5569a6e-5aea-48a3-b076-bf8f88f4b893}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{5a51c0f4-9e6c-4197-b0fb-0ce62e211dcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Text">
+      <UniqueIdentifier>{5105e2e7-ecb3-449a-ba1e-865b265d5f8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Overlays">
+      <UniqueIdentifier>{951bf102-ad2a-49ec-b691-3734d9aa7246}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Overlays\UI">
+      <UniqueIdentifier>{cf1e474e-b2b8-4a21-81e7-0ebc3c5ebc28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Overlays\Game">
+      <UniqueIdentifier>{9988859e-df50-425c-89e2-5f68234527e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\GameInterfaces">
+      <UniqueIdentifier>{44a98388-d709-4440-b36e-5d6515a5baa1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Graphics">
+      <UniqueIdentifier>{a814f43e-7c2d-4957-a396-14ac6c30d27e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Overlays\UI\Elements">
+      <UniqueIdentifier>{cc94aecc-24ec-4f65-8b3c-4b388defea79}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Engine\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity3d.cpp">
+      <Filter>Engine\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLoop.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Tile3d.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Sphere3d.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Diamond.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="DiamondScene.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundingSphere.cpp">
+      <Filter>Engine\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Frustum.cpp">
+      <Filter>Engine\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Plane.cpp">
+      <Filter>Engine\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Engine\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="PointLight.cpp">
+      <Filter>Engine\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneEntity.cpp">
+      <Filter>Engine\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="SelfCreatingPolyhedral.cpp">
+      <Filter>Engine\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineInput.cpp">
+      <Filter>Engine\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="GameInput.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="TextRenderer.cpp">
+      <Filter>Engine\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="DiamondGame.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Overlay.cpp">
+      <Filter>Engine\Overlays\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="GameOverlay.cpp">
+      <Filter>Engine\Overlays\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="OverlayEntity.cpp">
+      <Filter>Engine\Overlays\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="OverlayTab.cpp">
+      <Filter>Engine\Overlays\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="OverlayTextLabel.cpp">
+      <Filter>Engine\Overlays\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="ShadowedScene.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="glad.c">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="TextLine.cpp">
+      <Filter>Engine\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="OverlayGraphics.cpp">
+      <Filter>Engine\Overlays</Filter>
+    </ClCompile>
+    <ClCompile Include="TouchLayer.cpp">
+      <Filter>Engine\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonElement.cpp">
+      <Filter>Engine\Overlays\UI\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="ScrollbarElement.cpp">
+      <Filter>Engine\Overlays\UI\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="TextElement.cpp">
+      <Filter>Engine\Overlays\UI\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="NumericSelectorElement.cpp">
+      <Filter>Engine\Overlays\UI\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="ElementBase.cpp">
+      <Filter>Engine\Overlays\UI\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionSet.cpp">
+      <Filter>Engine\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="DigitalActions.cpp">
+      <Filter>Engine\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="SpacerElement.cpp">
+      <Filter>Engine\Overlays\UI\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonBarElement.cpp">
+      <Filter>Engine\Overlays\UI\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="TextEditElement.cpp">
+      <Filter>Engine\Overlays\UI\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="InputCharSet.cpp">
+      <Filter>Engine\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="OverlayEnv.cpp">
+      <Filter>Engine\Overlays\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="OverlayView.cpp">
+      <Filter>Engine\Overlays\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ElementCollection.cpp">
+      <Filter>Engine\Overlays\UI\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="GameUIElement.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Entity.h">
+      <Filter>Engine\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity3d.h">
+      <Filter>Engine\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Engine\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="PointLight.h">
+      <Filter>Engine\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLoop.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Tile3d.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Sphere3d.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="GameInput.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="DiamondScene.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Diamond.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Plane.h">
+      <Filter>Engine\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Frustum.h">
+      <Filter>Engine\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundingSphere.h">
+      <Filter>Engine\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneEntity.h">
+      <Filter>Engine\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="IEngineInputIntl.h">
+      <Filter>Engine\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneActions.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineInput.h">
+      <Filter>Engine\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="SelfCreatingPolyhedral.h">
+      <Filter>Engine\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="TextRenderer.h">
+      <Filter>Engine\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="DiamondGame.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Overlay.h">
+      <Filter>Engine\Overlays\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="GameFonts.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="GameOverlay.h">
+      <Filter>Engine\Overlays\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="OverlayEntity.h">
+      <Filter>Engine\Overlays\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="OverlayTab.h">
+      <Filter>Engine\Overlays\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="OverlayTextLabel.h">
+      <Filter>Engine\Overlays\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="IOverlayEntity.h">
+      <Filter>Engine\GameInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IGameInput.h">
+      <Filter>Engine\GameInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IEngineInput.h">
+      <Filter>Engine\GameInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IGame.h">
+      <Filter>Engine\GameInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IGameLoop.h">
+      <Filter>Engine\GameInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="ShadowedScene.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="TextLine.h">
+      <Filter>Engine\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="OverlayGraphics.h">
+      <Filter>Engine\Overlays</Filter>
+    </ClInclude>
+    <ClInclude Include="IOverlayIntl.h">
+      <Filter>Engine\Overlays\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="IDiamondScene.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="TouchLayer.h">
+      <Filter>Engine\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="ITouchLayer.h">
+      <Filter>Engine\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="ITouchTarget.h">
+      <Filter>Engine\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonElement.h">
+      <Filter>Engine\Overlays\UI\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="TextElement.h">
+      <Filter>Engine\Overlays\UI\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="ScrollbarElement.h">
+      <Filter>Engine\Overlays\UI\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="NumericSelectorElement.h">
+      <Filter>Engine\Overlays\UI\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="ElementBase.h">
+      <Filter>Engine\Overlays\UI\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="IOverlayTab.h">
+      <Filter>Engine\GameInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionSet.h">
+      <Filter>Engine\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="OverlayDefs.h">
+      <Filter>Engine\GameInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IOverlay.h">
+      <Filter>Engine\GameInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IWindow.h">
+      <Filter>Engine\GameInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="DigitalActions.h">
+      <Filter>Engine\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="InputDefs.h">
+      <Filter>Engine\GameInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="SpacerElement.h">
+      <Filter>Engine\Overlays\UI\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="IOverlayElement.h">
+      <Filter>Engine\Overlays\UI\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonBarElement.h">
+      <Filter>Engine\Overlays\UI\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="TextEditElement.h">
+      <Filter>Engine\Overlays\UI\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="InputCharSet.h">
+      <Filter>Engine\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="ITextInputTarget.h">
+      <Filter>Engine\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="IScene.h">
+      <Filter>Engine\GameInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="ITextRenderer.h">
+      <Filter>Engine\GameInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="OverlayEnv.h">
+      <Filter>Engine\Overlays\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="IOverlayEnvIntl.h">
+      <Filter>Engine\Overlays\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ColourDefs.h">
+      <Filter>Engine\GameInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IOverlayEnv.h">
+      <Filter>Engine\GameInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="OverlayDefsInt.h">
+      <Filter>Engine\Overlays\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="OverlayView.h">
+      <Filter>Engine\Overlays\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="IOverlayView.h">
+      <Filter>Engine\GameInterfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IOverlayViewIntl.h">
+      <Filter>Engine\Overlays\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ElementCollection.h">
+      <Filter>Engine\Overlays\UI\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="GameUIElement.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="depth_display_frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="depth_display_vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="light_frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="light_vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="polyhedral_frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="polyhedral_shadow_frag.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="polyhedral_shadow_vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="polyhedral_vert.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="text_frag.glsl">
+      <Filter>Engine\Text</Filter>
+    </None>
+    <None Include="text_vert.glsl">
+      <Filter>Engine\Text</Filter>
+    </None>
+    <None Include="overlay_frag.glsl">
+      <Filter>Engine\Overlays\Game</Filter>
+    </None>
+    <None Include="overlay_vert.glsl">
+      <Filter>Engine\Overlays\Game</Filter>
+    </None>
+    <None Include="glyph_frag.glsl">
+      <Filter>Engine\Overlays\UI</Filter>
+    </None>
+    <None Include="glyph_vert.glsl">
+      <Filter>Engine\Overlays\UI</Filter>
+    </None>
+  </ItemGroup>
+</Project>

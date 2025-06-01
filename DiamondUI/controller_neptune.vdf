@@ -1,0 +1,189 @@
+"controller_mappings"
+{
+	"version"		"3"
+	"revision"		"3"
+	"title"		""
+	"description"		"#SettingsController_AutosaveDescription"
+	"creator"		"76561197997688318"
+	"progenitor"		"template://empty.vdf"
+	"url"		"template://empty.vdf"
+	"export_type"		"unknown"
+	"controller_type"		"controller_neptune"
+	"controller_caps"		"23117823"
+	"major_revision"		"0"
+	"minor_revision"		"0"
+	"Timestamp"		"1487396100"
+	"actions"
+	{
+		"InGameControls"
+		{
+			"title"					"#Set_Ingame"
+			"StickPadGyro"
+			{
+				"Move"
+				{
+					"title"			"#Action_Move"
+					"input_mode"	"joystick_move"
+				}
+				"Camera"
+				{
+					"title"			"#Action_Camera"
+					"input_mode"	"absolute_mouse"
+				}
+			}
+			"AnalogTrigger"
+			{
+				"Throttle"			"#Action_Throttle"
+			}
+			"Button"
+			{
+				"fire"				"#Action_Fire"
+				"Jump"				"#Action_Jump"
+				"pause_menu"		"#Action_Menu"
+				"lock_camera"		"#Lock_Camera"
+				"show_depth_map"	"#Show_Depth_Map"
+			}
+		}
+		"MenuControls"
+		{
+			"title"		"#Set_Menu"
+			"StickPadGyro"
+			{
+			}
+			"AnalogTrigger"
+			{
+			}
+			"Button"
+			{
+				"menu_up"		"#Menu_Up"
+				"menu_down"		"#Menu_Down"
+				"menu_left"		"#Menu_Left"
+				"menu_right"	"#Menu_Right"
+				"menu_nexttab"  "#Menu_NextTab"
+				"menu_prevtab"  "#Menu_PrevTab"
+				"menu_select"	"#Menu_Select"
+				"menu_ok"	    "#Menu_Ok"
+				"menu_cancel"	"#Menu_Cancel"
+				"unpause_menu"	"#Action_ReturnToGame"
+			}
+		}
+	}
+	"localization"
+	{
+		"english"
+		{
+			"Set_Ingame"			"In-Game Controls"
+			"Set_Menu"				"Menu Controls"
+			"Lock_Camera"			"Lock Camera"
+			"Show_Depth_Map"		"Show Depth Map"
+			"Action_Move"			"Movement"
+			"Action_Camera"			"Camera"
+			"Action_Throttle"		"Throttle"
+			"Action_Fire"			"Fire"
+			"Action_Jump"			"Jump"
+			"Action_Menu"			"Pause"
+			"Action_ReturnToGame"	"Return To Game"
+			"Menu_Up"				"Up"
+			"Menu_Down"				"Down"
+			"Menu_Left"				"Left"
+			"Menu_Right"			"Right"
+			"Menu_Select"			"Select"
+			"Menu_Ok"				"Okay"
+			"Menu_Cancel"			"Cancel"
+			"Menu_NextTab"			"Next Tab"
+			"Menu_PrevTab"			"Previous Tab"
+		}
+	}
+	"group"
+	{
+		"id"		"0"
+		"mode"		"switches"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+			"button_capture"
+			{
+				"activators"
+				{
+					"release"
+					{
+						"bindings"
+						{
+							"binding"		"controller_action system_key_1, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+		}
+	}
+	"group"
+	{
+		"id"		"1"
+		"mode"		"trigger"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+		}
+	}
+	"group"
+	{
+		"id"		"2"
+		"mode"		"trigger"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+		}
+	}
+	"group"
+	{
+		"id"		"9"
+		"mode"		"dpad"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+			"dpad_north"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"xinput_button B, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+		}
+		"settings"
+		{
+			"requires_click"		"0"
+			"haptic_intensity_override"		"0"
+		}
+	}
+	"preset"
+	{
+		"id"		"0"
+		"name"		"Default"
+		"group_source_bindings"
+		{
+			"0"		"switch active"
+			"1"		"left_trigger active"
+			"2"		"right_trigger active"
+			"9"		"button_diamond active"
+		}
+	}
+	"settings"
+	{
+	}
+}

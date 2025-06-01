@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{e7f07248-7eee-4949-b65d-4a52b6237806}</ProjectGuid>
+    <RootNamespace>DiamondUI</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\src\steamdeck\include\freetype;C:\src\steamdeck\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\src\steamdeck\lib\debug;C:\src\steamdeck\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LibraryPath>C:\src\steamdeck\lib\release;C:\src\steamdeck\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\src\steamdeck\include;C:\src\steamdeck\include\freetype;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glfw3.lib;steam_api64.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)DiamondUI\steam_appid.txt" "$(TargetDir)steam_appid.txt"
+copy "$(SolutionDir)DiamondUI\*.glsl" "$(TargetDir)"
+copy "$(SolutionDir)DiamondUI\*.vdf" "$(TargetDir)"
+copy "$(SolutionDir)DiamondUI\steam_api64.dll" "$(TargetDir)steam_api64.dll"
+copy "$(SolutionDir)DiamondUI\freetype.dll" "$(TargetDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glfw3.lib;steam_api64.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ActionSet.cpp" />
+    <ClCompile Include="BoundingSphere.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Diamond.cpp" />
+    <ClCompile Include="DiamondGame.cpp" />
+    <ClCompile Include="DiamondScene.cpp" />
+    <ClCompile Include="DigitalActions.cpp" />
+    <ClCompile Include="ElementCollection.cpp" />
+    <ClCompile Include="EngineInput.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="Entity3d.cpp" />
+    <ClCompile Include="Frustum.cpp" />
+    <ClCompile Include="GameInput.cpp" />
+    <ClCompile Include="GameLoop.cpp" />
+    <ClCompile Include="GameOverlay.cpp" />
+    <ClCompile Include="GameUIElement.cpp" />
+    <ClCompile Include="glad.c" />
+    <ClCompile Include="InputCharSet.cpp" />
+    <ClCompile Include="OverlayEnv.cpp" />
+    <ClCompile Include="OverlayView.cpp" />
+    <ClCompile Include="TouchLayer.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="OverlayGraphics.cpp" />
+    <ClCompile Include="OverlayEntity.cpp" />
+    <ClCompile Include="OverlayTab.cpp" />
+    <ClCompile Include="OverlayTextLabel.cpp" />
+    <ClCompile Include="Plane.cpp" />
+    <ClCompile Include="PointLight.cpp" />
+    <ClCompile Include="SceneEntity.cpp" />
+    <ClCompile Include="SelfCreatingPolyhedral.cpp" />
+    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="ShadowedScene.cpp" />
+    <ClCompile Include="Sphere3d.cpp" />
+    <ClCompile Include="TextLine.cpp" />
+    <ClCompile Include="TextRenderer.cpp" />
+    <ClCompile Include="Textures.cpp" />
+    <ClCompile Include="Tile3d.cpp" />
+    <ClCompile Include="ButtonBarElement.cpp" />
+    <ClCompile Include="ButtonElement.cpp" />
+    <ClCompile Include="ElementBase.cpp" />
+    <ClCompile Include="NumericSelectorElement.cpp" />
+    <ClCompile Include="Overlay.cpp" />
+    <ClCompile Include="ScrollbarElement.cpp" />
+    <ClCompile Include="SpacerElement.cpp" />
+    <ClCompile Include="TextEditElement.cpp" />
+    <ClCompile Include="TextElement.cpp" />
+    <ClCompile Include="Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ActionSet.h" />
+    <ClInclude Include="BoundingSphere.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="ColourDefs.h" />
+    <ClInclude Include="Diamond.h" />
+    <ClInclude Include="DiamondGame.h" />
+    <ClInclude Include="DiamondScene.h" />
+    <ClInclude Include="DigitalActions.h" />
+    <ClInclude Include="ElementCollection.h" />
+    <ClInclude Include="EngineInput.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="Entity3d.h" />
+    <ClInclude Include="Frustum.h" />
+    <ClInclude Include="GameFonts.h" />
+    <ClInclude Include="GameInput.h" />
+    <ClInclude Include="GameLoop.h" />
+    <ClInclude Include="GameOverlay.h" />
+    <ClInclude Include="GameUIElement.h" />
+    <ClInclude Include="IDiamondScene.h" />
+    <ClInclude Include="IEngineInput.h" />
+    <ClInclude Include="IEngineInputIntl.h" />
+    <ClInclude Include="IGame.h" />
+    <ClInclude Include="IGameInput.h" />
+    <ClInclude Include="IGameLoop.h" />
+    <ClInclude Include="InputCharSet.h" />
+    <ClInclude Include="InputDefs.h" />
+    <ClInclude Include="IOverlayEnvIntl.h" />
+    <ClInclude Include="IOverlayTab.h" />
+    <ClInclude Include="IOverlayView.h" />
+    <ClInclude Include="IOverlayViewIntl.h" />
+    <ClInclude Include="ITextInputTarget.h" />
+    <ClInclude Include="ITouchLayer.h" />
+    <ClInclude Include="ITouchTarget.h" />
+    <ClInclude Include="IOverlay.h" />
+    <ClInclude Include="IOverlayEnv.h" />
+    <ClInclude Include="IWindow.h" />
+    <ClInclude Include="OverlayDefs.h" />
+    <ClInclude Include="OverlayDefsInt.h" />
+    <ClInclude Include="OverlayEnv.h" />
+    <ClInclude Include="OverlayView.h" />
+    <ClInclude Include="TouchLayer.h" />
+    <ClInclude Include="IOverlayEntity.h" />
+    <ClInclude Include="ITextRenderer.h" />
+    <ClInclude Include="IOverlayIntl.h" />
+    <ClInclude Include="IOverlayElement.h" />
+    <ClInclude Include="OverlayGraphics.h" />
+    <ClInclude Include="OverlayEntity.h" />
+    <ClInclude Include="IScene.h" />
+    <ClInclude Include="OverlayTab.h" />
+    <ClInclude Include="OverlayTextLabel.h" />
+    <ClInclude Include="Plane.h" />
+    <ClInclude Include="PointLight.h" />
+    <ClInclude Include="SceneActions.h" />
+    <ClInclude Include="SceneEntity.h" />
+    <ClInclude Include="SelfCreatingPolyhedral.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="ShadowedScene.h" />
+    <ClInclude Include="Sphere3d.h" />
+    <ClInclude Include="TextLine.h" />
+    <ClInclude Include="TextRenderer.h" />
+    <ClInclude Include="Textures.h" />
+    <ClInclude Include="Tile3d.h" />
+    <ClInclude Include="ButtonBarElement.h" />
+    <ClInclude Include="ButtonElement.h" />
+    <ClInclude Include="ElementBase.h" />
+    <ClInclude Include="NumericSelectorElement.h" />
+    <ClInclude Include="Overlay.h" />
+    <ClInclude Include="ScrollbarElement.h" />
+    <ClInclude Include="SpacerElement.h" />
+    <ClInclude Include="TextEditElement.h" />
+    <ClInclude Include="TextElement.h" />
+    <ClInclude Include="Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="depth_display_frag.glsl" />
+    <None Include="depth_display_vert.glsl" />
+    <None Include="glyph_frag.glsl" />
+    <None Include="glyph_vert.glsl" />
+    <None Include="light_frag.glsl" />
+    <None Include="light_vert.glsl" />
+    <None Include="overlay_frag.glsl" />
+    <None Include="overlay_vert.glsl" />
+    <None Include="polyhedral_frag.glsl" />
+    <None Include="polyhedral_shadow_frag.glsl" />
+    <None Include="polyhedral_shadow_vert.glsl" />
+    <None Include="polyhedral_vert.glsl" />
+    <None Include="text_frag.glsl" />
+    <None Include="text_vert.glsl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
